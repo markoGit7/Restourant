@@ -2,29 +2,106 @@
     margin:0;
 }
 
+.boxed{
+    width: 1214px;
+    max-width: 100%;
+    padding:0 20px;
+    margin:0 auto;
+}
+
+/*about css*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+.about .boxed{
+    height: 100%;
+}
+
+.about .box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 -50px;
+}
+
+.about .box .single{
+    width: calc(100% - 500px);
+    padding:0 50px;
+}
+
+.about .box .single.auto{
+    width: 550px;
+}
+
+.about .box .single .title{
+    display: inline-block;
+}
+
+.about .box .single .title h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.about .box .single .title p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+    color:#fff;
+}
+
+.about .box .single .image{
+    width: auto;
+    height: 200px;
+    position: relative;
+    padding-top:75%;
+}
+
+.about .box .single .image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
 /*breakfast-block css*/
 
-.breakfast-block{
+.menue-block{
     width: 100%;
     height: auto;
     position: relative;
     padding: 50px 0;
 }
 
-.breakfast-block .title{
+.menue-block .title{
     display: inline-block;
     margin-bottom: 40px;
     overflow-x: hidden;
 }
 
-.breakfast-block .title h2{
+.menue-block .title h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 0;
 }
 
-.breakfast-block .title .underline{
+.menue-block .title .underline{
     width: 50%;
     display: block;
     height: 9px;
@@ -32,43 +109,48 @@
     background-color: #ff9100;
 }
 
-.breakfast-block .box{
+.menue-block .box{
     width: 100%;
     height: auto;
     position: relative;
     overflow-x: hidden;
 }
 
-.breakfast-block .box .internal{
+.menue-block .box .internal{
     display: flex;
-    flex-wrap:wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin:0 -15px;
     height: auto;
     position: relative;
 }
 
-.breakfast-block .box .single{
+.menue-block .box .single{
     width: 25%;
     height: auto;
     position: relative;
     padding:15px;
 }
 
-.breakfast-block .box .single .image{
-    height: 250px;
+.menue-block .box .single .image{
+    height: 200px;
     position: relative;
     width: auto;
 }
 
-.breakfast-block .box .image a img{
+.menue-block .box .single .image:hover{
+    transform: scale(1.1);
+}
+
+.menue-block .box .image a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.breakfast-block .box .image a .name{
-    background-color: rgba(0, 0, 0,70%);
+.menue-block .box .image a .name{
+    background-color: rgba(0, 0, 0,60%);
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0,50%));
     position: absolute;
     top:0;
@@ -82,12 +164,12 @@
     transition: all 0.5s ease;
 }
 
-.breakfast-block .box .image a .name h3{
+.menue-block .box .image a .name h3{
     color:#fff;
     margin-bottom: 0;
     text-align: center;
 }
 
-.breakfast-block .box .image:hover a .name{
+.menue-block .box .image:hover a .name{
     opacity: 100%;
 }
