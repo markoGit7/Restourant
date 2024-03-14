@@ -23,6 +23,7 @@
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    display: none;
 }
 
 @keyframes preloader {
@@ -76,7 +77,66 @@
 }
 
 
+/* header css */
 
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+    z-index: 10;
+    background-color: orange;
+}
+
+header .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 0 22px;
+}
+
+header .box .logo{
+    display: block;
+}
+
+header .box .logo h1{
+    margin-bottom: 0;
+}
+
+header .box .resp-nav{
+    width: 25px;
+    height: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .box .resp-nav span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+header .box .nav-bar{
+    display: block;
+}
+
+header .box .nav-bar ul{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding-left:0;
+    list-style: none;
+}
+
+header .box .nav-bar ul li{
+    padding: 0 10px;
+}
 
 
 
