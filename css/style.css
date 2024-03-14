@@ -83,7 +83,6 @@ header{
     width: 100%;
     height: auto;
     position: relative;
-    padding: 30px 0;
     z-index: 10;
     background-color: orange;
 }
@@ -92,13 +91,23 @@ header .box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     position: relative;
-    padding: 0 22px;
+    padding: 30px 0;
+    margin:0 22px;
 }
 
 header .box .logo{
-    display: block;
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+}
+
+header .box .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
 }
 
 header .box .logo h1{
@@ -109,17 +118,46 @@ header .box .resp-nav{
     width: 25px;
     height: 20px;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
     cursor: pointer;
+    display: none;
 }
 
 header .box .resp-nav span{
-    display: block;
+    position: absolute;
     width: 100%;
     height: 2px;
     background-color: black;
+    top:50%;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+header .box .resp-nav span.one{
+    top:0;
+    transform: none;
+}
+
+header .box .resp-nav span.two{
+    top:auto;
+    bottom:0;
+    transform: none;
+}
+
+header .box .resp-nav.active span{
+    opacity: 0%;
+}
+
+header .box .resp-nav.active span.one{
+    transform: rotateZ(47deg)  translateY(-50%);
+    top:50%;
+    opacity: 100%;
+}
+
+header .box .resp-nav.active span.two{
+    transform: rotateZ(-47deg)  translateY(-50%);
+    top:50%;
+    opacity: 100%;
 }
 
 header .box .nav-bar{
@@ -136,6 +174,14 @@ header .box .nav-bar ul{
 
 header .box .nav-bar ul li{
     padding: 0 10px;
+}
+
+header .box .nav-bar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color:#fff;
 }
 
 
@@ -402,4 +448,15 @@ header .box .nav-bar ul li{
 
 .menue-block .box .image:hover a .name{
     opacity: 100%;
+}
+
+@media (max-width:991.98px) {
+
+    header .box .resp-nav{
+        display: block;
+    }
+
+    header .box .nav-bar{
+        display: none;
+    }
 }
