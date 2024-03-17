@@ -14,11 +14,60 @@
       crossorigin="anonymous"
     />
     <!--Aos Animations Css-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--Css-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
+    <header>
+      <div class="box">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="logo"
+            width="300px"
+            height="240px"
+            loading="lazy"
+          />
+        </div>
+        <div class="resp-nav">
+          <!--active-->
+          <span class="one"></span>
+          <span></span>
+          <span class="two"></span>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+
+            <li>
+              <a href="#">Menu</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+
+            <li>
+              <a href="#">
+                <picture>
+                  <source srcset="images/cart.webp" type="image/webp" />
+                  <img
+                    src="images/cart.png"
+                    alt="shopping-cart"
+                    width="33px"
+                    height="29px"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <!--About-Block-->
     <section class="about">
       <div class="boxed">
@@ -26,363 +75,440 @@
           <div class="single">
             <div class="title">
               <h1>Restourant</h1>
-              <p>Try out<br>our specialitis</p>
+              <p>Try out<br />our specialitis</p>
             </div>
           </div>
           <div class="single auto">
             <div class="image">
               <picture>
-                <source srcset="images/about-1.webp">
-                <img src="images/about-1.jpg" alt="about" width="626px" height="358px" loading="lazy">
+                <source srcset="images/about-1.webp" />
+                <img
+                  src="images/about-1.jpg"
+                  alt="about"
+                  width="626px"
+                  height="358px"
+                  loading="lazy"
+                />
               </picture>
             </div>
           </div>
         </div>
         <div class="arrows">
-          <div class="arrow"></div>
-          <div class="arrow"></div>
-        </div>
-      </div>
-    </section>
-    <!--Breakfast-Block-->
-    <section class="menue-block">
-      <div class="boxed">
-        <div class="title">
-          <h2>Breakfast</h2>
-          <div
-            class="underline"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="0"
-            data-aos-duration="700"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top"
-          ></div>
-        </div>
-        <div class="box">
-          <div
-            class="internal"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <!--Food Image 1-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/breakfast-1.webp" type="image/webp" />
-                    <img
-                      src="images/breakfast-1.jpg"
-                      alt="food"
-                      width="556px"
-                      height="505px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!--Food Image 2-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/breakfast-2.webp" type="image/webp" />
-                    <img
-                      src="images/breakfast-2.jpg"
-                      alt="food"
-                      width="1400px"
-                      height="919px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>.
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!--Food Image 3-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/breakfast-3.webp" type="image/webp" />
-                    <img
-                      src="images/breakfast-3.jpg"
-                      alt="food"
-                      width="1500px"
-                      height="1000px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!--Food Image 4-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/breakfast-4.webp" type="image/webp" />
-                    <img
-                      src="images/breakfast-4.jpg"
-                      alt="food"
-                      width="1500px"
-                      height="1000px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div class="arrow top">
+            <a href="#menu">
+              <picture>
+                <source srcset="images/arrow-down.webp" type="image/webp" />
+                <img
+                  src="images/arrow-down.png"
+                  alt="arrow-down"
+                  width="512px"
+                  height="512px"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="arrow">
+            <a href="#menu">
+              <picture>
+                <source srcset="images/arrow-down.webp" type="image/webp" />
+                <img
+                  src="images/arrow-down.png"
+                  alt="arrow-down"
+                  width="512px"
+                  height="512px"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!--Salads-Block-->
-    <section class="menue-block">
-      <div class="boxed">
-        <div class="title">
-          <h2>Salads</h2>
-          <div
-            class="underline"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="0"
-            data-aos-duration="700"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top"
-          ></div>
-        </div>
-        <div class="box">
-          <div
-            class="internal"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="center"
-          >
-            <!--Food Image 1-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/salad-1.webp" type="image/webp" />
-                    <img
-                      src="images/salad-1.jpg"
-                      alt="food"
-                      width="1244px"
-                      height="1244px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+    <div class="relative-space">
+      <div class="bg-image">
+        <picture>
+          <source srcset="images/bg-image.webp" type="image/webp" />
+          <img
+            src="images/bg-image.png"
+            alt="bg-image"
+            width="2296px"
+            height="668px"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <!--Breakfast-Block-->
+      <section class="menue-block" id="menu">
+        <div class="boxed">
+          <div class="title">
+            <h2>Breakfast</h2>
+            <div
+              class="underline"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="0"
+              data-aos-duration="700"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="internal"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <!--Food Image 1-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/breakfast-1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/breakfast-1.jpg"
+                        alt="food"
+                        width="556px"
+                        height="505px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 2-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/salad-2.webp" type="image/webp" />
-                    <img
-                      src="images/salad-2.jpg"
-                      alt="food"
-                      width="2000px"
-                      height="1335px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 2-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/breakfast-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/breakfast-2.jpg"
+                        alt="food"
+                        width="1400px"
+                        height="919px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 3-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/salad-3.webp" type="image/webp" />
-                    <img
-                      src="images/salad-3.jpg"
-                      alt="food"
-                      width="1080px"
-                      height="810px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 3-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/breakfast-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/breakfast-3.jpg"
+                        alt="food"
+                        width="1500px"
+                        height="1000px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 4-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/salad-4.webp" type="image/webp" />
-                    <img
-                      src="images/salad-4.jpg"
-                      alt="food"
-                      width="1259px"
-                      height="1259px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 4-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/breakfast-4.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/breakfast-4.jpg"
+                        alt="food"
+                        width="1500px"
+                        height="1000px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Grilled-Block-->
-    <section class="menue-block">
-      <div class="boxed">
-        <div class="title">
-          <h2>Grilled Food</h2>
-          <div
-            class="underline"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="0"
-            data-aos-duration="700"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top"
-          ></div>
-        </div>
-        <div class="box">
-          <div
-            class="internal"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="center"
-          >
-            <!--Food Image 1-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/grilled-1.webp" type="image/webp" />
-                    <img
-                      src="images/grilled-1.jpg"
-                      alt="food"
-                      width="1500px"
-                      height="1125px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+      </section>
+      <!--Salads-Block-->
+      <section class="menue-block">
+        <div class="boxed">
+          <div class="title">
+            <h2>Salads</h2>
+            <div
+              class="underline"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="0"
+              data-aos-duration="700"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="internal"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <!--Food Image 1-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source srcset="images/salad-1.webp" type="image/webp" />
+                      <img
+                        src="images/salad-1.jpg"
+                        alt="food"
+                        width="1244px"
+                        height="1244px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 2-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/grilled-2.webp" type="image/webp" />
-                    <img
-                      src="images/grilled-2.jpg"
-                      alt="food"
-                      width="1200px"
-                      height="1200px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 2-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source srcset="images/salad-2.webp" type="image/webp" />
+                      <img
+                        src="images/salad-2.jpg"
+                        alt="food"
+                        width="2000px"
+                        height="1335px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 3-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/grilled-3.webp" type="image/webp" />
-                    <img
-                      src="images/grilled-3.jpg"
-                      alt="food"
-                      width="567px"
-                      height="850px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 3-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source srcset="images/salad-3.webp" type="image/webp" />
+                      <img
+                        src="images/salad-3.jpg"
+                        alt="food"
+                        width="1080px"
+                        height="810px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <!--Food Image 4-->
-            <div class="single">
-              <div class="image">
-                <a href="#">
-                  <picture>
-                    <source srcset="images/grilled-4.webp" type="image/webp" />
-                    <img
-                      src="images/grilled-4.jpg"
-                      alt="food"
-                      width="1500px"
-                      height="1000px"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <div class="name">
-                    <h3>Food Name</h3>
-                  </div>
-                </a>
+              <!--Food Image 4-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source srcset="images/salad-4.webp" type="image/webp" />
+                      <img
+                        src="images/salad-4.jpg"
+                        alt="food"
+                        width="1259px"
+                        height="1259px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!--Grilled-Block-->
+      <section class="menue-block">
+        <div class="boxed">
+          <div class="title">
+            <h2>Grilled Food</h2>
+            <div
+              class="underline"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="0"
+              data-aos-duration="700"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="internal"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <!--Food Image 1-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/grilled-1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/grilled-1.jpg"
+                        alt="food"
+                        width="1500px"
+                        height="1125px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--Food Image 2-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/grilled-2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/grilled-2.jpg"
+                        alt="food"
+                        width="1200px"
+                        height="1200px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--Food Image 3-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/grilled-3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/grilled-3.jpg"
+                        alt="food"
+                        width="567px"
+                        height="850px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--Food Image 4-->
+              <div class="single">
+                <div class="image">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="images/grilled-4.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="images/grilled-4.jpg"
+                        alt="food"
+                        width="1500px"
+                        height="1000px"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <div class="name">
+                      <h3>Food Name</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pre-loader">
+      <div class="bg-color">
+        <div class="animation">
+          <div class="line"></div>
+        </div>
       </div>
-    </section>
+    </div>
     <!--Aos Animation Js-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
