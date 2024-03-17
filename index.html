@@ -22,49 +22,43 @@
     <header>
       <div class="box">
         <div class="logo">
-          <img
-            src="images/logo.png"
-            alt="logo"
-            width="300px"
-            height="240px"
-            loading="lazy"
-          />
+          <div class="image">
+            <picture>
+              <img src="images/logo.png" alt="logo" width="" height="" loading="lazy">
+            </picture>
+          </div>
         </div>
-        <div class="resp-nav">
-          <!--active-->
-          <span class="one"></span>
-          <span></span>
-          <span class="two"></span>
-        </div>
-        <div class="nav-bar">
-          <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
+        <div class="navigation">
+          <div class="cart">
+            <a href="#">
+              <picture>
+                <source srcset="images/cart.webp">
+                <img src="images/cart.avif" alt="cart" width="256px" height="256px" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="responsive">
+            <div class="burger" id="nav">
+              <span class="top"></span>
+              <span></span>
+              <span class="bottom"></span>
+            </div>
+          </div>
+          <div class="regular">
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
 
-            <li>
-              <a href="#">Menu</a>
-            </li>
+              <li>
+                <a href="#">Menu</a>
+              </li>
 
-            <li>
-              <a href="#">Contact</a>
-            </li>
-
-            <li>
-              <a href="#">
-                <picture>
-                  <source srcset="images/cart.webp" type="image/webp" />
-                  <img
-                    src="images/cart.png"
-                    alt="shopping-cart"
-                    width="33px"
-                    height="29px"
-                    loading="lazy"
-                  />
-                </picture>
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a href="#">Contact</a> 
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -125,19 +119,7 @@
         </div>
       </div>
     </section>
-    <div class="relative-space">
-      <div class="bg-image">
-        <picture>
-          <source srcset="images/bg-image.webp" type="image/webp" />
-          <img
-            src="images/bg-image.png"
-            alt="bg-image"
-            width="2296px"
-            height="668px"
-            loading="lazy"
-          />
-        </picture>
-      </div>
+    
       <!--Breakfast-Block-->
       <section class="menue-block" id="menu">
         <div class="boxed">
@@ -501,14 +483,8 @@
           </div>
         </div>
       </section>
-    </div>
-    <div class="pre-loader">
-      <div class="bg-color">
-        <div class="animation">
-          <div class="line"></div>
-        </div>
-      </div>
-    </div>
+      <!--Main Js-->
+      <script src="js/main.js"></script>
     <!--Aos Animation Js-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
