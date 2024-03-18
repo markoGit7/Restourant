@@ -55,26 +55,97 @@ header .box .navigation .cart{
     max-width: 100%;
     padding:0 10px;
     order:2;
-}
-
-header .box .navigation .cart a{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
-header .box .navigation .cart a img{
+header .box .navigation .cart a{
+    display: inline-block;
+}
+
+header .box .navigation .cart a img,
+header .box .navigation .cart a svg{
     width: auto;
     height: auto;
     max-width: 30px;
     max-height: 25px;
 }
 
+/*Food Order Inbox*/
+header .box .navigation .cart .inbox{
+    position: absolute;
+    right:0;
+    top:calc(100% + 10px);
+    width: 200px;
+    height: 0%;
+    overflow: auto;
+    background-color: rgb(68, 223, 250);
+}
+
+header .box .navigation .cart .inbox .title{
+    width: 100%;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 5px 0;
+    text-align: center;
+}
+
+header .box .navigation .cart .inbox .title h4{
+    display: inline-block;
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 0;
+}
+
+header .box .navigation .cart .inbox .content{
+    width: 100%;
+    padding:5px;
+}
+
+header .box .navigation .cart .inbox .content .single{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .box .navigation .cart .inbox .content .single p{
+    margin-bottom: 0;
+}
+
+header .box .navigation .cart .inbox .content .single span{
+    width: 12px;
+    height: auto;
+}
+
+header .box .navigation .cart .inbox .content .single span svg,
+header .box .navigation .cart .inbox .content .single span img{
+    width: auto;
+    height: auto;
+    max-width: 12px;
+    max-height: 12px;
+}
+
+header .box .navigation .cart .inbox.active{
+    position: absolute;
+    right:0;
+    top:calc(100% + 10px);
+    width: 200px;
+    height: 150px;
+    overflow: auto;
+    background-color: rgb(68, 223, 250);
+}
+
 header .box .navigation .responsive{
     display: none;
     order:3;
+    min-width: 50px;
+    min-height: 45px;
+}
+
+header .box .navigation .responsive.active{
+    background-color: rgba(0, 0, 0,10%);
 }
 
 header .box .navigation .responsive .burger{
@@ -400,26 +471,32 @@ header .box .navigation .regular.active{
 
 @media (max-width:767.98px) {
     header .box .navigation .responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .box .navigation .regular.active,
+    header .box .navigation .regular{
+        position: absolute;
+        top:100%;
+        right:0%;
+        background-color: white;
+        z-index: 10;
+        width: 150px;
+        height: calc(100dvh - 90px);
         display: block;
+        overflow: auto;
+        transition: all 0.2s ease-in-out;
     }
 
     header .box .navigation .regular{
-        display: none;
-    }
-
-    header .box .navigation .regular.active{
-        position: absolute;
-        top: 100%;
-        right:0;
-        background-color: white;
-        z-index: 10;
-        width: 25%;
-        height: 100dvh;
-        display: block;
-        overflow: auto;
+       right: -300%;
+       transition: all 0.2s ease-in-out;
     }
     
-    header .box .navigation .regular.active ul{
+    header .box .navigation .regular.active ul,
+    header .box .navigation .regular ul{
         flex-direction: column;
         align-items: flex-end;
         margin:0;
